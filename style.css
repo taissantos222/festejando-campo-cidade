@@ -1,0 +1,118 @@
+:root {
+  --verde: #4CAF50;
+  --branco: #fff;
+  --cinza: #f5f5f5;
+  --escuro: #333;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--branco);
+  color: var(--escuro);
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?farm,city') no-repeat center center/cover;
+  color: var(--branco);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--verde);
+  color: var(--branco);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #388e3c;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+}
+
+.sobre, .programacao, .contato {
+  background: var(--cinza);
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--verde);
+}
+
+/* Programação */
+.programacao ul {
+  list-style: square;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+/* Formulário */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: var(--verde);
+  color: var(--branco);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #388e3c;
+}
+
+/* Rodapé */
+.rodape {
+  background: var(--verde);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .programacao ul {
+    padding-left: 10px;
+  }
+}
