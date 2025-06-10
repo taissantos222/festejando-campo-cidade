@@ -2,59 +2,67 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Festejo Campo & Cidade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festejando a Conexão: Campo & Cidade</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header class="hero">
-    <h1>Festejo Campo & Cidade</h1>
-    <p>Celebrando a união entre o rural e o urbano</p>
-    <a href="#programacao" class="btn">Ver Programação</a>
+  <header>
+    <h1>Festejando a Conexão: Campo & Cidade</h1>
+    <p>Um encontro de culturas, saberes e sabores</p>
   </header>
 
-  <section class="sobre">
+  <section id="sobre">
     <h2>Sobre o Evento</h2>
-    <p>Um encontro de culturas, saberes e sabores do campo e da cidade. Oficinas, feiras, música e mais.</p>
+    <p>
+      Mais do que uma festa, um encontro de mundos. O campo traz suas raízes, a cidade sua energia.
+      Juntos, criamos um espaço de troca, celebração e aprendizado. Bem-vindos ao Festejo Campo & Cidade!
+    </p>
   </section>
 
-  <section id="programacao" class="programacao">
-    <h2>Programação</h2>
+  <section id="programacao">
+    <h2>Programacão</h2>
     <ul>
-      <li>Feira de Produtos Orgânicos</li>
-      <li>Oficina de Culinária Rural</li>
-      <li>Apresentações Artísticas</li>
-      <li>Exposição de Arte Urbana</li>
+      <li>🌽 Desfile de Tratores e Grafites ao Vivo</li>
+      <li>🎶 Show com Banda Forró-Elétrico e DJs urbanos</li>
+      <li>🍅 Oficina "Da Horta à Mesa" com chefs locais</li>
+      <li>🎨 Espaço Criativo: pintura com terra e spray</li>
+      <li>📷 Estúdio Fotográfico "Você no Campo e na Cidade"</li>
     </ul>
   </section>
 
-  <section class="contato">
-    <h2>Contato</h2>
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <p>Confira alguns momentos inesquecíveis da edição anterior:</p>
+    <div class="fotos">
+      <img src="img1.jpg" alt="Feira rural" />
+      <img src="img2.jpg" alt="Grafite urbano" />
+      <img src="img3.jpg" alt="Oficina de culinária" />
+    </div>
+  </section>
+
+  <section id="participar">
+    <h2>Participe</h2>
     <form>
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" placeholder="Seu nome" />
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Seu email" />
-
-      <label for="assunto">Assunto:</label>
-      <select id="assunto">
-        <option>Dúvida</option>
-        <option>Inscrição</option>
-        <option>Voluntariado</option>
+      <label for="cidade">De onde você vem?</label>
+      <select id="cidade" name="cidade">
+        <option>Zona Rural</option>
+        <option>Zona Urbana</option>
+        <option>Ambos!</option>
       </select>
 
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" placeholder="Escreva aqui..."></textarea>
+      <label for="mensagem">Por que você quer participar?</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
 
       <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <footer class="rodape">
-    <p>&copy; 2025 Festejo Campo & Cidade</p>
+  <footer>
+    <p>&copy; 2025 - Festejo Campo & Cidade. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
